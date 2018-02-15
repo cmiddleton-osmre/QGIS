@@ -13,7 +13,7 @@ ENV CXX=/usr/lib/ccache/clang++
 ENV QT_SELECT=5
 ENV LANG=C.UTF-8
 
-COPY .. /usr/src/QGIS
+COPY . /usr/src/QGIS
 
 COPY $CACHE_DIR /root/.ccache
 ENV CCACHE_DIR=/root/.ccache
